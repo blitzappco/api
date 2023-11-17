@@ -1,0 +1,5 @@
+deploy
+/tmp
+/env
+/deploy.sh
+/api
