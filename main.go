@@ -4,6 +4,7 @@ import (
 	"api/accounts"
 	"api/db"
 	"api/env"
+	"api/tickets"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
@@ -24,6 +25,7 @@ func main() {
   })
 
   accounts.Routes(app)
+  tickets.Routes(app)
 
   app.Listen(":9999")
 }
